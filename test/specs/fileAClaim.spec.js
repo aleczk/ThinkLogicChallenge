@@ -11,8 +11,6 @@ describe('Test - File A Claim', () => {
         await expect(FileAClaimPage.sucessfulSubmission).toHaveText("Your claim has been submitted.")
     });
 
-       
-
     it('Unsucessful Submission - Email Address not valid.', async() => {
         FileAClaimPage.submitMandatoryFields("Alecs", "", "07/18/2022", "", "Alecsander Camilo");
         

@@ -3,7 +3,6 @@ import BasePage from "./base.page";
 class FileAClaimPage extends BasePage {
     open() { return super.open("/claim-form") }
 
-    // Mandatory Fields
     get inputName() { 
         return $('#c__Name_ee85a0da');
     };
@@ -26,7 +25,7 @@ class FileAClaimPage extends BasePage {
 
     get inputSignature() {
         return $('#c__SignatureText_ee85a0da');
-    }
+    };
 
     get submitButton() {
         return $("//button[normalize-space()='Submit']");
@@ -48,7 +47,7 @@ class FileAClaimPage extends BasePage {
         await this.inputSignature.setValue(signature);
         await browser.pause(1000);
         await this.submitButton.click();
-    }
-}
+    };
+};
 
 export default new FileAClaimPage();
