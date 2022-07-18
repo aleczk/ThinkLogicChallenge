@@ -1,6 +1,6 @@
 import FileAClaimPage from "../pageObjects/fileAClaim.page";
 
-describe('Test - Contact Us Form', () => {
+describe('Test - File A Claim', () => {
     beforeEach(async() => {
         await FileAClaimPage.open(); 
     });
